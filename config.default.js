@@ -4,7 +4,7 @@ module.exports = {
 	// CUSTOM uses the one located in the 'scrypt' subdirectory; it must be compiled to use
 	scrypt: 'NPM:SCRYPT'
 	// Google Analytics tracking ID
-	, analytics: 'UA-00000000-0'
+	, analytics: 'UA-56057953-1'
 	// How long sessions should be stored in the database, in milliseconds
 	, sessionTimeout: 30 * 24 * 60 * 60 * 1000
 	// How long withdrawal links will last, in milliseconds
@@ -36,10 +36,10 @@ module.exports = {
 	}
 	// The pool you're connecting to; set active to false when developing so you don't constantly disconnect and reconnect
 	, stratum: {
-		host: ''
-		, port: 3333
-		, username: ''
-		, password: ''
+		host: 'stratum+tcp://goldmin.es'
+		, port: 58000
+		, username: 'DEeTEdnDaf4FrSiQVoAtX3QavCnA3vb4WS'
+		, password: 'x'
 		, active: true
 	}
 	// This is used for payouts in the processing/payout.js file; do not put your pool information here
