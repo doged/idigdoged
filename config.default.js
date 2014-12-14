@@ -26,26 +26,26 @@ module.exports = {
 	}
 	// The default port for the API server; it can also be set using the NODE_PORT or PORT environment variables, which will override this setting
 	, server: {
-		port: 9876
+		port: 80
 	}
 	// It works on a predictive model, so configure these values appropriately for how much you have been making
 	, payouts: {
-		targetPerHour: 25
+		targetPerHour: 0
 		, maxPerShare: 0.005
 		, minWithdraw: 1
 	}
 	// The pool you're connecting to; set active to false when developing so you don't constantly disconnect and reconnect
 	, stratum: {
-		host: 'stratum+tcp://goldmin.es'
-		, port: 58000
-		, username: 'DEeTEdnDaf4FrSiQVoAtX3QavCnA3vb4WS'
+		host: 'stratum+tcp://us.clevermining.com'
+		, port: 3333
+		, username: '13Dv9HXLXmgxrQprmLjdKMVhdqzk1gnAy2'
 		, password: 'x'
 		, active: true
 	}
 	// This is used for payouts in the processing/payout.js file; do not put your pool information here
 	, rpc: {
 		host: ''
-		, port: 22555
+		, port: 20102
 		, username: ''
 		, password: ''
 		, accountName: ''
